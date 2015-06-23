@@ -3,21 +3,28 @@
 | Variables
 |--------------------------------------------------------------------------
 */
-$gray-base:             #000 !default;
-$gray-darker:           lighten($gray-base, 10%) !default;
-$gray-dark:             lighten($gray-base, 30%) !default;
-$gray:                  lighten($gray-base, 50%) !default;
-$gray-light:            lighten($gray-base, 70%) !default;
-$gray-lighter:          lighten($gray-base, 90%) !default;
+$body:                     #FFFFFF !default;
 
-$brand-primary:         #337AB7 !default;
-$brand-success:         #5CB85C !default;
-$brand-info:            #5BC0DE !default;
-$brand-warning:         #F0AD4E !default;
-$brand-danger:          #D9534F !default;
+$gray:                     #808080 !default;
+$gray-dark:                darken($gray, 25%) !default;
+$gray-darker:              darken($gray, 50%) !default;
+$gray-light:               lighten($gray, 25%) !default;
+$gray-lighter:             lighten($gray, 50%) !default;
 
+$primary:                  #337AB7 !default;
+$success:                  #5CB85C !default;
+$info:                     #5BC0DE !default;
+$warning:                  #F0AD4E !default;
+$danger:                   #D9534F !default;
 
-$screen-phone:          480px !default;
-$screen-tablet:         768px !default;
-$screen-laptop:         992px !default;
-$screen-desktop:        1200px !default;
+// Typography
+$text-color:               $gray-dark !default;
+$link-color:               $primary !default;
+$link-hover-color:         darken($link-color, 15%) !default;
+$link-hover-decoration:    underline !default;
+
+// Breakpoints
+$screen-phone:             480px !default;
+$screen-tablet:            768px !default;
+$screen-laptop:            992px !default;
+$screen-desktop:           1200px !default;
