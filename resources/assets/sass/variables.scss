@@ -1,30 +1,41 @@
 /*
 |--------------------------------------------------------------------------
-| Variables
+| Colors
 |--------------------------------------------------------------------------
 */
-$body:                     #FFFFFF !default;
+// Background for the body
+$body-background:   #FFFFFF !default;
 
-$gray:                     #808080 !default;
-$gray-dark:                darken($gray, 25%) !default;
-$gray-darker:              darken($gray, 50%) !default;
-$gray-light:               lighten($gray, 25%) !default;
-$gray-lighter:             lighten($gray, 50%) !default;
+// Gray colors for use across the app
+$gray:            #808080 !default;
+$gray-dark:       darken($gray, 25%) !default;
+$gray-darker:     darken($gray, 50%) !default;
+$gray-light:      lighten($gray, 25%) !default;
+$gray-lighter:    lighten($gray, 50%) !default;
 
-$primary:                  #337AB7 !default;
-$success:                  #5CB85C !default;
-$info:                     #5BC0DE !default;
-$warning:                  #F0AD4E !default;
-$danger:                   #D9534F !default;
+// Brand colors follow the twitter bootstrap schema
+$primary:         #337AB7 !default;
+$success:         #5CB85C !default;
+$info:            #5BC0DE !default;
+$warning:         #F0AD4E !default;
+$danger:          #D9534F !default;
 
-// Typography
+/*
+|--------------------------------------------------------------------------
+| Typography
+|--------------------------------------------------------------------------
+*/
 $text-color:               $gray-dark !default;
 $link-color:               $primary !default;
 $link-hover-color:         darken($link-color, 15%) !default;
 $link-hover-decoration:    underline !default;
 
-// Breakpoints
-$screen-phone:             480px !default;
-$screen-tablet:            768px !default;
-$screen-laptop:            992px !default;
-$screen-desktop:           1200px !default;
+/*
+|--------------------------------------------------------------------------
+| Breakpoints
+|--------------------------------------------------------------------------
+*/
+$screen-phone:      480px !default;
+$screen-tablet:     768px !default;
+$screen-laptop:     992px !default;
+$screen-desktop:    1200px !default;
