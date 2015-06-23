@@ -6,6 +6,7 @@ import jshint from 'gulp-jshint';
 import browserify from 'browserify';
 import stylish from 'jshint-stylish';
 import source from 'vinyl-source-stream';
+import autoprefixer from 'gulp-autoprefixer';
 
 const SCRIPTS_DIR = 'resources/assets/scripts';
 const STYLES_DIR = 'resources/assets/sass';
@@ -40,7 +41,7 @@ gulp.task('browserify', () => {
 // Compile SASS to regular CSS
 gulp.task('sass', () => {
   return gulp.src(STYLES_DIR+'/style.scss')
-    .pipe(sass().on('error', sass.logError))
+    .pipe(sass().on('error', handleError))
     .pipe(gulp.dest('./public/css'));
 });
 
