@@ -42,6 +42,7 @@ gulp.task('browserify', () => {
 gulp.task('sass', () => {
   return gulp.src(STYLES_DIR+'/style.scss')
     .pipe(sass().on('error', handleError))
+    .pipe(autoprefixer('last 10 versions'))
     .pipe(gulp.dest('./public/css'));
 });
 
