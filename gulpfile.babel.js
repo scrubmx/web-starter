@@ -13,7 +13,7 @@ const STYLES_DIR = 'resources/assets/sass';
 
 /**
  * Handle error reporting
- * @param  object error [description]
+ * @param  object error
  */
 function handleError(error){
   gutil.log(gutil.colors.red('Error: ' + error.message));
