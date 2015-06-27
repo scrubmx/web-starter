@@ -10,5 +10,8 @@
     "gulp-util": "^3.0.5",
     "jshint-stylish": "^2.0.1",
     "vinyl-source-stream": "^1.1.0"
+  },
+  "dependencies": {
+    "jquery": "^2.1.4"
   }
 }
