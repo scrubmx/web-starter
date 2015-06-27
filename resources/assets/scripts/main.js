@@ -1,13 +1,11 @@
 import jQuery from 'jquery';
 
-(function($, window, undefined){
+(($, window, undefined) => {
 
-	"use strict";
+	'use strict';
 
-	$(function(){
+	$('html').removeClass('no-js');
 
-		$('html').removeClass('no-js').addClass('js');
-
-	});
+	// Place your code here...
 
 })(jQuery, window);
