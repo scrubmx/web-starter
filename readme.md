@@ -22,6 +22,11 @@ sudo npm install
 
 # Directory Structure
 ```bash
+├── public
+│   ├── css
+│   │   └── style.css
+│   └── js
+│       └── bundle.js
 ├── resources
 │   └── assets
 │       ├── sass
@@ -34,6 +39,7 @@ sudo npm install
 ├── favicon.ico
 ├── gulpfile.babel.js
 ├── index.html
+├── license.txt
 ├── package.json
 ├── readme.md
 └── robots.txt
