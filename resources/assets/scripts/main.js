@@ -2,10 +2,10 @@ import jQuery from 'jquery';
 
 (($, window, undefined) => {
 
-	'use strict';
+  'use strict';
 
-	$('html').removeClass('no-js');
+  $('html').removeClass('no-js');
 
-	// Place your code here...
+  // Place your code here...
 
 })(jQuery, window);
