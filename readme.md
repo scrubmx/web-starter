@@ -22,11 +22,6 @@ sudo npm install
 
 # Directory Structure
 ```bash
-├── public
-│   ├── css
-│   │   └── style.css
-│   └── js
-│       └── bundle.js
 ├── resources
 │   └── assets
 │       ├── sass
