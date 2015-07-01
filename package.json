@@ -14,8 +14,8 @@
     "jshint-stylish": "^2.0.1",
     "vinyl-source-stream": "^1.1.0"
   },
-  "license" : "MIT",
-  "repository" : {
+  "license": "MIT",
+  "repository": {
     "type": "git",
     "url": "git@github.com:scrubmx/web-starter.git"
   }
