@@ -28,7 +28,7 @@ gulp.task('lint', () => {
     .pipe(jshint.reporter('fail'));
 });
 
-// Use ES6 modules in the browser
+// Compile node modules for use in the browser
 gulp.task('browserify', () => {
   return browserify(SCRIPTS_DIR+'/main.js')
     .transform(babelify, { stage: 0 })
@@ -38,7 +38,7 @@ gulp.task('browserify', () => {
     .pipe(gulp.dest('./public/js'));
 });
 
-// Compile SASS to regular CSS
+// Compile SASS and add vendor prefixes
 gulp.task('sass', () => {
   return gulp.src(STYLES_DIR+'/style.scss')
     .pipe(sass().on('error', handleError))
@@ -46,7 +46,7 @@ gulp.task('sass', () => {
     .pipe(gulp.dest('./public/css'));
 });
 
-// Recompile files when saved
+// Watch files for changes
 gulp.task('watch', ['lint', 'browserify', 'sass'], () => {
   gulp.watch(SCRIPTS_DIR+'/**/*.js', ['lint', 'browserify']);
   gulp.watch(STYLES_DIR+'/**/*.scss', ['sass']);
