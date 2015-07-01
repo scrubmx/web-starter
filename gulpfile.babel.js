@@ -15,7 +15,7 @@ const STYLES_DIR = 'resources/assets/sass';
  * Handle error reporting
  * @param  object error
  */
-function handleError(error){
+function handleError(error) {
   gutil.log(gutil.colors.red('Error: ' + error.message));
   this.emit('end');
 }
@@ -32,8 +32,7 @@ gulp.task('lint', () => {
 gulp.task('browserify', () => {
   return browserify(SCRIPTS_DIR+'/main.js')
     .transform(babelify, { stage: 0 })
-    .bundle()
-    .on('error', handleError)
+    .bundle().on('error', handleError)
     .pipe(source('bundle.js'))
     .pipe(gulp.dest('./public/js'));
 });
