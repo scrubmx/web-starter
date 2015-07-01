@@ -41,7 +41,7 @@ gulp.task('browserify', () => {
 // Compile SASS and add vendor prefixes
 gulp.task('sass', () => {
   return gulp.src(STYLES_DIR+'/style.scss')
-    .pipe(sass().on('error', handleError))
+    .pipe(sass({ outputStyle: 'compressed' }).on('error', handleError))
     .pipe(autoprefixer('last 10 versions'))
     .pipe(gulp.dest('./public/css'));
 });
