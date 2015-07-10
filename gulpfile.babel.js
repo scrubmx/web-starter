@@ -9,7 +9,7 @@ import source from 'vinyl-source-stream';
 import sourcemaps from 'gulp-sourcemaps';
 import autoprefixer from 'gulp-autoprefixer';
 
-const SCRIPTS_DIR = 'resources/assets/scripts';
+const SCRIPTS_DIR = 'resources/assets/js';
 const STYLES_DIR = 'resources/assets/sass';
 
 /**
@@ -40,7 +40,7 @@ gulp.task('browserify', () => {
 
 // Compile SASS and add vendor prefixes
 gulp.task('sass', () => {
-  return gulp.src(STYLES_DIR+'/style.scss')
+  return gulp.src(STYLES_DIR+'/app.scss')
     .pipe(sourcemaps.init())
     .pipe(sass({ outputStyle: 'compressed' }).on('error', handleError))
     .pipe(autoprefixer('last 10 versions'))
