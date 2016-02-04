@@ -24,8 +24,8 @@ $body-bg:          $white;
 | Typography
 |--------------------------------------------------------------------------
 */
-$font-family:              "Helvetica Neue", Helvetica, Arial, sans-serif;
-$text-color:               $gray-dark;
+$font-family-primary:      "Helvetica Neue", Helvetica, Arial, sans-serif;
+$primary-text-color:       $gray-dark;
 $link-color:               $brand-primary;
 $link-hover-color:         darken($link-color, 15%);
 $link-hover-decoration:    underline;

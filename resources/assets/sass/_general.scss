@@ -4,11 +4,11 @@
 |--------------------------------------------------------------------------
 */
 body {
-  color: $text-color;
-  font-family: $font-family;
+  color: $primary-text-color;
+  font-family: $font-family-primary;
   background-color: $body-bg;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: $font-family;
+  font-family: $font-family-primary;
 }
