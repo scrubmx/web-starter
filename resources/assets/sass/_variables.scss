@@ -35,11 +35,17 @@ $link-hover-decoration:    underline;
 | Media Queries Breakpoints
 |--------------------------------------------------------------------------
 */
+$screen-ss-min:    320px;
 $screen-xs-min:    480px;
 $screen-sm-min:    768px;
 $screen-md-min:    992px;
+$screen-mg-min:    1024px;
 $screen-lg-min:    1200px;
+$screen-gd-min:    1824px;
 
+$screen-ss-max:    ($screen-xs-min - 1);
 $screen-xs-max:    ($screen-sm-min - 1);
 $screen-sm-max:    ($screen-md-min - 1);
-$screen-md-max:    ($screen-lg-min - 1);
+$screen-md-max:    ($screen-mg-min - 1);
+$screen-mg-max:    ($screen-lg-min - 1);
+$screen-lg-max:    ($screen-gd-min - 1);
