@@ -31,10 +31,10 @@ gulp.task('lint', () => {
 
 // Compile node modules for use in the browser
 gulp.task('browserify', () => {
-  return browserify(SCRIPTS_DIR+'/main.js')
+  return browserify(SCRIPTS_DIR+'/app.js')
     .transform(babelify, { stage: 0 })
     .bundle().on('error', handleError)
-    .pipe(source('bundle.js'))
+    .pipe(source('app.js'))
     .pipe(gulp.dest('./public/js'));
 });
 
