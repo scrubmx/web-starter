@@ -29,7 +29,7 @@ sudo npm install
 │       │   ├── _variables.scss
 │       │   └── style.scss
 │       └── scripts
-│           └── main.js
+│           └── app.js
 ├── .gitignore
 ├── favicon.ico
 ├── gulpfile.babel.js
