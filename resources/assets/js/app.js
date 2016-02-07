@@ -1,11 +1,15 @@
-(($, window, undefined) => {
+global.$ = global.jQuery = require('jquery');
+require('bootstrap');
+
+/*
+ |--------------------------------------------------------------------------
+ | Document Ready Function
+ |--------------------------------------------------------------------------
+ */
+$(function() {
 
     'use strict';
 
-    $('html').removeClass('no-js');
+    // Here be dragons.
 
-
-    // Place your code here...
-
-
-})(jQuery, window);
+});

@@ -16,5 +16,9 @@
   "repository": {
     "type": "git",
     "url": "git@github.com:scrubmx/web-starter.git"
+  },
+  "dependencies": {
+    "jquery": "^2.2.0",
+    "bootstrap": "^3.3.6"
   }
 }
