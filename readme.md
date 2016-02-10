@@ -30,6 +30,7 @@ sudo npm install
 │       │   └── style.scss
 │       └── scripts
 │           └── app.js
+├── .editorconfig
 ├── .gitignore
 ├── favicon.ico
 ├── gulpfile.babel.js
